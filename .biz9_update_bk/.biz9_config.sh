@@ -1,0 +1,8 @@
+BIZ9_MOBILE_VERSION='8.2.1';
+APP_VERSION='1.0.5'
+PROJECT_ID='275'
+APP_VENDOR=''
+APP_TITLE='MK'
+APP_TITLE_ID='mobile-275'
+CONFIG_ID='io.bossappz.mobile275'
+GIT_REPO="${BIZ9_GIT_REPO}biz9-mobile.git"

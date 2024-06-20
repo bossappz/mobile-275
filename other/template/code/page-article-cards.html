@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+
+        <a href="#" data-menu="menu-modal-view" class="card card-style bg-1" data-card-height="220">
+            <div class="card-top p-3">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-top p-3">
+                <span class="btn btn-xxs font-10 bg-blue-dark rounded-xl float-end text-uppercase font-700">Tap to View</span>
+            </div>
+            <div class="card-bottom p-3">
+                <p class="mb-0 color-white">This Card will Open a</p>
+                <h1 class="color-white font-30">Modal View</h1>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </a>
+        
+        <a href="#" data-menu="menu-top-view" class="card card-style bg-14" data-card-height="220">
+            <div class="card-center p-3">
+                <h1 class="color-white font-30">Top View</h1>
+                <p class="mt-n2 mb-0 color-white">This Card will Open a</p>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </a>
+        
+        <a href="#" data-menu="menu-right-view" class="card card-style bg-21" data-card-height="220">
+            <div class="card-top p-3">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-top p-3">
+                <span class="btn btn-xxs font-10 bg-blue-dark rounded-xl float-end text-uppercase font-700">Tap to View</span>
+            </div>
+            <div class="card-bottom p-3 text-end">
+                <p class="mb-0 color-white">This Card will Open a</p>
+                <h1 class="color-white font-30">Right View</h1>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </a>
+        <a href="#" data-menu="menu-left-view" class="card card-style bg-10" data-card-height="220">
+            <div class="card-top p-3">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <span class="badge bg-red-dark float-end px-2 py-1 text-uppercase">FEATURED CONTENT</span>
+            </div>
+            <div class="card-top p-3 ms-5">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <span class="btn btn-sm bg-blue-dark rounded-xl btn-center-m text-uppercase font-700">Tap to View</span>
+            </div>
+            <div class="card-center p-3 text-center">
+                <p class="mb-0 color-white">This Card will Open a</p>
+                <h1 class="color-white font-30">Left View</h1>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </a>
+        <a href="#" data-menu="menu-bottom-view" class="card card-style bg-18" data-card-height="220">
+            <div class="card-top p-3">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <span class="badge color-white float-end px-2 py-1 text-uppercase">Tap to view</span>
+            </div>
+            <div class="card-top p-3 ms-5">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3 text-center">
+                <p class="mb-0 color-white">This Card will Open a</p>
+                <h1 class="color-white font-30">Bottom View</h1>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </a>
+        
+
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+    
+    <!-- Bottom View-->
+    <div id="menu-bottom-view" class="menu menu-box-bottom menu-box-bottom-full" data-menu-width="cover" data-menu-height="cover">
+        <div class="card bg-18" data-card-height="350">
+            <div class="card-top p-3 no-click">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <a href="#" class="close-menu float-end"><i class="fa fa-times-circle fa-2x color-red-dark"></i></a>
+            </div>
+            <div class="card-top p-3 ms-5 no-click">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <h1 class="color-white font-30">Introducing <br> Instant Screens</h1>
+                <p class="color-white opacity-50">Built so you can instantly showcase your content. From any position, with any caption placement. It's super easy and fast.</p>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+        
+        <div class="content">
+            <p>We build the best mobile websites for you, making them feel as native as native can get with features that are intutive and easy to use. Creating Mobile Templates has been our passion and goal for the past 10 years, ever since the dawn of the first Mobile Website.</p>
+            <div class="divider"></div>
+            <h3>Add Anything Here</h3>
+            <p class="color-blue-dark font-11 mt-n2 mb-2">Any Feature, Any Content. Just works.</p>
+            <p>
+                Believe it or not, this section is actually a menu, built using our ultra powerful mobile menu system. You can add any type of content you want here.
+            </p>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="card card-style bg-14" data-card-height="120">
+            <div class="card-center p-3 no-click">
+                <h1 class="color-white">View More</h1>
+                <p class="color-white font-12 mt-n2 mb-0">Find more Awesome Products</p>
+            </div>
+            <div class="card-center p-3">
+                <a href="#" class="btn btn-xs text-uppercase font-800 bg-blue-dark float-end rounded-xl">View More</a>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <a href="#" class="close-menu btn btn-full bg-red-dark btn-m bg-red-dark btn-margins text-uppercase font-700 rounded-sm">Close Instant</a>
+    </div>
+        
+    <!-- Top View-->
+    <div id="menu-top-view" class="menu menu-box-bottom" data-menu-width="cover" data-menu-height="cover">
+        <div class="card bg-18" data-card-height="350">
+            <div class="card-top p-3 no-click">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <a href="#" class="close-menu float-end"><i class="fa fa-times-circle fa-2x color-red-dark"></i></a>
+            </div>
+            <div class="card-top p-3 ms-5 no-click">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <h1 class="color-white font-30">Introducing <br> Instant Screens</h1>
+                <p class="color-white opacity-50">Built so you can instantly showcase your content. From any position, with any caption placement. It's super easy and fast.</p>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+        
+        <div class="content">
+            <p>We build the best mobile websites for you, making them feel as native as native can get with features that are intutive and easy to use. Creating Mobile Templates has been our passion and goal for the past 10 years, ever since the dawn of the first Mobile Website.</p>
+            <div class="divider"></div>
+            <h3>Add Anything Here</h3>
+            <p class="color-blue-dark font-11 mt-n2 mb-2">Any Feature, Any Content. Just works.</p>
+            <p>
+                Believe it or not, this section is actually a menu, built using our ultra powerful mobile menu system. You can add any type of content you want here.
+            </p>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="card card-style bg-14" data-card-height="120">
+            <div class="card-center p-3 no-click">
+                <h1 class="color-white">View More</h1>
+                <p class="color-white font-12 mt-n2 mb-0">Find more Awesome Products</p>
+            </div>
+            <div class="card-center p-3">
+                <a href="#" class="btn btn-xs text-uppercase font-800 bg-blue-dark float-end rounded-xl">View More</a>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <a href="#" class="close-menu btn btn-full bg-red-dark btn-m bg-red-dark btn-margins text-uppercase font-700 rounded-sm">Close Instant</a>
+    </div>
+        
+    <!-- Left View-->
+    <div id="menu-left-view" class="menu menu-box-left" data-menu-width="cover" data-menu-height="cover">
+        <div class="card bg-18" data-card-height="350">
+            <div class="card-top p-3 no-click">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <a href="#" class="close-menu float-end"><i class="fa fa-times-circle fa-2x color-red-dark"></i></a>
+            </div>
+            <div class="card-top p-3 ms-5 no-click">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <h1 class="color-white font-30">Introducing <br> Instant Screens</h1>
+                <p class="color-white opacity-50">Built so you can instantly showcase your content. From any position, with any caption placement. It's super easy and fast.</p>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+        
+        <div class="content">
+            <p>We build the best mobile websites for you, making them feel as native as native can get with features that are intutive and easy to use. Creating Mobile Templates has been our passion and goal for the past 10 years, ever since the dawn of the first Mobile Website.</p>
+            <div class="divider"></div>
+            <h3>Add Anything Here</h3>
+            <p class="color-blue-dark font-11 mt-n2 mb-2">Any Feature, Any Content. Just works.</p>
+            <p>
+                Believe it or not, this section is actually a menu, built using our ultra powerful mobile menu system. You can add any type of content you want here.
+            </p>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="card card-style bg-14" data-card-height="120">
+            <div class="card-center p-3 no-click">
+                <h1 class="color-white">View More</h1>
+                <p class="color-white font-12 mt-n2 mb-0">Find more Awesome Products</p>
+            </div>
+            <div class="card-center p-3">
+                <a href="#" class="btn btn-xs text-uppercase font-800 bg-blue-dark float-end rounded-xl">View More</a>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <a href="#" class="close-menu btn btn-full bg-red-dark btn-m bg-red-dark btn-margins text-uppercase font-700 rounded-sm">Close Instant</a>
+    </div>
+        
+    <!-- Right View-->
+    <div id="menu-right-view" class="menu menu-box-right" data-menu-width="cover" data-menu-height="cover">
+        <div class="card bg-18" data-card-height="350">
+            <div class="card-top p-3 no-click">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <a href="#" class="close-menu float-end"><i class="fa fa-times-circle fa-2x color-red-dark"></i></a>
+            </div>
+            <div class="card-top p-3 ms-5 no-click">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <h1 class="color-white font-30">Introducing <br> Instant Screens</h1>
+                <p class="color-white opacity-50">Built so you can instantly showcase your content. From any position, with any caption placement. It's super easy and fast.</p>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+        
+        <div class="content">
+            <p>We build the best mobile websites for you, making them feel as native as native can get with features that are intutive and easy to use. Creating Mobile Templates has been our passion and goal for the past 10 years, ever since the dawn of the first Mobile Website.</p>
+            <div class="divider"></div>
+            <h3>Add Anything Here</h3>
+            <p class="color-blue-dark font-11 mt-n2 mb-2">Any Feature, Any Content. Just works.</p>
+            <p>
+                Believe it or not, this section is actually a menu, built using our ultra powerful mobile menu system. You can add any type of content you want here.
+            </p>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="card card-style bg-14" data-card-height="120">
+            <div class="card-center p-3 no-click">
+                <h1 class="color-white">View More</h1>
+                <p class="color-white font-12 mt-n2 mb-0">Find more Awesome Products</p>
+            </div>
+            <div class="card-center p-3">
+                <a href="#" class="btn btn-xs text-uppercase font-800 bg-blue-dark float-end rounded-xl">View More</a>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <a href="#" class="close-menu btn btn-full bg-red-dark btn-m bg-red-dark btn-margins text-uppercase font-700 rounded-sm">Close Instant</a>
+    </div>
+        
+    <!-- Modal View-->
+    <div id="menu-modal-view" class="menu menu-box-modal rounded-0" data-menu-width="cover" data-menu-height="cover">
+        <div class="card bg-18" data-card-height="350">
+            <div class="card-top p-3 no-click">
+                <img src="images/preload-logo.png" width="35">
+            </div>
+            <div class="card-top p-3 mt-2">
+                <a href="#" class="close-menu float-end"><i class="fa fa-times-circle fa-2x color-red-dark"></i></a>
+            </div>
+            <div class="card-top p-3 ms-5 no-click">
+                <h5 class="color-white mb-n1">Enabled</h5>
+                <span class="color-white font-11 opacity-50">2 Days Ago</span>
+            </div>
+            <div class="card-bottom p-3">
+                <h1 class="color-white font-30">Introducing <br> Instant Screens</h1>
+                <p class="color-white opacity-50">Built so you can instantly showcase your content. From any position, with any caption placement. It's super easy and fast.</p>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+        
+        <div class="content">
+            <p>We build the best mobile websites for you, making them feel as native as native can get with features that are intutive and easy to use. Creating Mobile Templates has been our passion and goal for the past 10 years, ever since the dawn of the first Mobile Website.</p>
+            <div class="divider"></div>
+            <h3>Add Anything Here</h3>
+            <p class="color-blue-dark font-11 mt-n2 mb-2">Any Feature, Any Content. Just works.</p>
+            <p>
+                Believe it or not, this section is actually a menu, built using our ultra powerful mobile menu system. You can add any type of content you want here.
+            </p>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="card card-style bg-14" data-card-height="120">
+            <div class="card-center p-3 no-click">
+                <h1 class="color-white">View More</h1>
+                <p class="color-white font-12 mt-n2 mb-0">Find more Awesome Products</p>
+            </div>
+            <div class="card-center p-3">
+                <a href="#" class="btn btn-xs text-uppercase font-800 bg-blue-dark float-end rounded-xl">View More</a>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <a href="#" class="close-menu btn btn-full bg-red-dark btn-m bg-red-dark btn-margins text-uppercase font-700 rounded-sm">Close Instant</a>
+    </div>
+</div>
+    
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

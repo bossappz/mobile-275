@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.bossappz.mobile275" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="CropPlugin">
+        <param name="android-package" value="com.jeduan.crop.CropPlugin" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="FirebaseMessaging">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="InAppBilling">
+        <param name="android-package" value="com.alexdisler_github_cozycode.inapppurchases.InAppBilling" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="FileChooser">
+        <param name="android-package" value="com.megster.cordova.FileChooser" />
+    </feature>
+    <name>MK</name>
+    <description>-</description>
+    <author email="support@bossappz.com" href="https://cordova.apache.org">
+        My BoSS AppZ Mobile
+    </author>
+    <content src="index.html" />
+    <allow-navigation href="https://*youtube.com/*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+        <string>need to photo library access to get pictures from there</string>
+    </edit-config>
+    <icon density="ldpi" src="other/cordova/android/icons/ldpi.png" />
+    <icon density="mdpi" src="other/cordova/android/icons/mdpi.png" />
+    <icon density="hdpi" src="other/cordova/android/icons/hdpi.png" />
+    <icon density="xhdpi" src="other/cordova/android/icons/xhdpi.png" />
+    <icon density="xxhdpi" src="other/cordova/android/icons/xxhdpi.png" />
+    <icon density="xxxhdpi" src="other/cordova/android/icons/xxxhdpi.png" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    <preference name="GradlePluginGoogleServicesVersion" value="4.4.0" />
+    <preference name="hostname" value="localhost" />
+    <preference name="InterceptRemoteRequests" value="all" />
+    <preference name="android-minSdkVersion" value="26" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#000000" />
+    <preference name="SplashScreenBackgroundColor" value="#000000" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="SplashScreenWidth" value="400" />
+    <preference name="SplashScreenHeight" value="400" />
+</widget>

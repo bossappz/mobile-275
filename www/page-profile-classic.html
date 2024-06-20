@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+
+    <!-- Global Menus-->
+    <!-- Menu Color -->
+	<div id="menu-color" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover">
+		<div class="card mx-0 mb-0 bg-transparent" data-card-height="cover">
+			<div class="card-top">
+				<a href="#" class="float-end icon icon-xl close-menu"><i class="fa fa-times color-white font-16 opacity-60"></i></a>
+			</div>
+			<div class="card-center">
+				<h1 class="fa-5x color-white text-uppercase text-center">Kolor</h1>
+				<p class="text-center color-white opacity-50 pt-3">Kolor includes 9 Gradients for you to enjoy. <br> It's easy to edit or create more.</p>
+				<div class="row mb-0 gradient-changer">
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-1">
+						<span class="icon icon-xl rounded-sm gradient-1"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Default</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-5">
+						<span class="icon icon-xl rounded-sm gradient-5"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Violet</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-7">
+						<span class="icon icon-xl rounded-sm gradient-7"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Magenta</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-6">
+						<span class="icon icon-xl rounded-sm gradient-6"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Red</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-3">
+						<span class="icon icon-xl rounded-sm gradient-3"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Green</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-4">
+						<span class="icon icon-xl rounded-sm gradient-4"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Blue</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-2">
+						<span class="icon icon-xl rounded-sm gradient-2"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Orange</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-8">
+						<span class="icon icon-xl rounded-sm gradient-8"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Dark</span>
+					</a>
+					<a href="#" class="col-4 text-center" data-gradient-change="gradient-9">
+						<span class="icon icon-xl rounded-sm gradient-9"><i class="fa fa-circle opacity-0"></i></span>
+						<span class="color-white font-400 font-13 pb-4 d-block">Yellow</span>
+					</a>
+					<a href="#" class="close-menu btn btn-m rounded-xl bg-white gradient-changer-btn color-black text-uppercase font-700 mx-auto mt-3">Awesome</a>
+				</div>
+			</div>
+		</div>
+	</div>    
+    <!-- Menu Share-->
+    <div id="menu-share" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390">
+		<h1 class="text-center mt-3 pt-1 font-26">Share the Love</h1>
+		<p class="text-center mt-n2 opacity-70">Share your page with the world. Just a  tap!</p>
+		<div class="row mb-0 text-center">
+			<div class="col-4">
+				<a href="auto_generated" class="shareToFacebook icon icon-xl color-white bg-facebook rounded-sm shadow-xl mb-1"><i class="fab fa-facebook-f font-24"></i></a>
+				<span class="font-12 mb-3 d-block">Facebook</span>
+			</div>
+			<div class="col-4">
+				<a href="auto_generated" class="shareToTwitter icon icon-xl color-white bg-twitter rounded-sm shadow-xl mb-1"><i class="fab fa-twitter font-24"></i></a>
+				<span class="font-12 mb-3 d-block">Twitter</span>
+			</div>
+			<div class="col-4">
+				<a href="auto_generated" class="shareToLinkedIn icon icon-xl color-white bg-linkedin rounded-sm shadow-xl mb-1"><i class="fab fa-linkedin-in font-24"></i></a>
+				<span class="font-12 mb-3 d-block">LinkedIn</span>
+			</div>
+			<div class="col-12 pb-3"></div>
+			<div class="col-4">
+				<a href="auto_generated" class="shareToWhatsApp icon icon-xl color-white bg-whatsapp rounded-sm shadow-xl mb-1"><i class="fab fa-whatsapp font-24"></i></a>
+				<span class="font-12 mb-3 d-block">WhatsApp</span>
+			</div>
+			<div class="col-4">
+				<a href="auto_generated" class="shareToPinterest icon icon-xl color-white bg-pinterest rounded-sm shadow-xl mb-1"><i class="fab fa-pinterest-p font-24"></i></a>
+				<span class="font-12 mb-3 d-block">Pinterest</span>
+			</div>
+			<div class="col-4">
+				<a href="auto_generated" class="shareToMail icon icon-xl color-white bg-mail rounded-sm shadow-xl mb-1"><i class="fa fa-envelope font-24"></i></a>
+				<span class="font-12 mb-3 d-block">Mail</span>
+			</div>
+		</div>
+		<p class="text-center font-11 pt-4">Copyright &copy; Enabled - <span class="copyright-year"></span>. All Rights Reserved.</p>
+	</div>      
+
+    <div class="page-content header-clear-medium">
+                
+        <div class="card card-style">
+            <div class="d-flex content mb-1">
+                <!-- left side of profile -->
+                <div class="flex-grow-1">
+                    <h2>Karla Black<i class="fa fa-check-circle color-blue-dark font-18 mt-2 ms-3"></i></h2>
+                    <p class="mb-2 mt-3 me-3">
+                        This  is a name used when you generate a text with an annonymous name.
+                    </p>
+                    <p class="font-10">
+                        <strong class="color-theme pe-1">1k</strong>Followers
+                        <strong class="color-theme ps-3 pe-1">342</strong>Following 
+                    </p>
+                </div>
+                <!-- right side of profile. increase image width to increase column size-->
+                <img src="images/pictures/0s.png" width="115" height="115" class="rounded-circle mt-3 shadow-l">
+            </div>
+            <!-- follow buttons-->
+            <div class="content mb-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full btn-sm rounded-sm text-uppercase font-800 font-12 bg-highlight">Follow</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full btn-sm rounded-sm text-uppercase font-800 font-12 color-highlight border-highlight">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider divider-margins mt-4 mb-0"></div>
+            <div class="gallery-view-controls mx-3">
+                <a href="#" class="color-highlight gallery-view-1-activate"><i class="fa fa-th"></i></a>
+                <a href="#" class="gallery-view-2-activate"><i class="fa fa-th-large"></i></a>
+                <a href="#" class="gallery-view-3-activate"><i class="fa fa-bars"></i></a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="content mt-0 mb-0">
+                <div class="gallery-views gallery-view-1">
+                    <a data-gallery="gallery-1" href="images/pictures/10t.jpg" title="Vynil and Typerwritter">
+                        <img src="images/empty.png" data-src="images/pictures/10t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">Messy Desk?</h4>
+                            <p>Some may consider this to be a very messy desk.</p>
+                            <div class="divider bottom-0"></div>
+                        </div>
+                    </a>
+                    <a data-gallery="gallery-1" href="images/pictures/11t.jpg" title="Fruit Cookie Pie">
+                        <img src="images/empty.png" data-src="images/pictures/11t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">Designers Desk</h4>
+                            <p>With all the gadgets you'd ever wish for.</p>
+                            <div class="divider bottom-0"></div>
+                        </div>
+                    </a>		
+                    <a data-gallery="gallery-1" href="images/pictures/28t.jpg" title="Plain Cookies and Flour">
+                        <img src="images/empty.png" data-src="images/pictures/28t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">Apple Watch</h4>
+                            <p>The perfect and small notification device.</p>
+                            <div class="divider bottom-0"></div>
+                        </div>
+                    </a>	
+                    <a data-gallery="gallery-1" href="images/pictures/18t.jpg" title="Pots and Stuff">
+                        <img src="images/empty.png" data-src="images/pictures/18t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">City Landscape</h4>
+                            <p>It's absolutely gorgeous, we'd love to see it live.</p>
+                            <div class="divider bottom-0"></div>
+                        </div>
+                    </a>
+                    <a data-gallery="gallery-1" href="images/pictures/14t.jpg" title="Delicious Strawberries">
+                        <img src="images/empty.png" data-src="images/pictures/24t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">Typography and iPhone 5</h4>
+                            <p>A beautifully captured snap with great contrast.</p>
+                            <div class="divider bottom-0"></div>
+                        </div>
+                    </a>
+                    <a data-gallery="gallery-1" href="images/pictures/15t.jpg" title="A Beautiful Camera">
+                        <img src="images/empty.png" data-src="images/pictures/25t.jpg" class="rounded-m preload-img shadow-xl img-fluid" alt="img">
+                        <div class="caption">
+                            <h4 class="bottom-0 color-theme">Feather and Paper?</h4>
+                            <p>Going back to days when things were simplere.</p>
+                        </div>
+                    </a>		
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loading Global Footer-->
+        <div class="card card-style">
+			<h1 class="text-center text-uppercase font-800 pt-4 font-30">Kolor</h1>
+			<p class="text-center text-uppercase font-800 font-11 opacity-70 mb-2 mt-n2">BUILT WITH <i class="fa fa-heart pl-1 pr-1 color-red-dark"></i> BY ELITES</p>    <p class="boxed-text-xl">
+				Simplicity and power packed into a beautiful, feature filled, fast, mobile template.
+			</p>
+			<p class="text-center">
+				<a href="#" class="default-link icon icon-m shadow-xl rounded-sm mx-1 color-white bg-facebook"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="default-link icon icon-m shadow-xl rounded-sm mx-1 color-white bg-twitter"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="default-link icon icon-m shadow-xl rounded-sm mx-1 color-white bg-phone"><i class="fa fa-phone"></i></a>
+				<a href="#" class="icon icon-m shadow-xl rounded-sm mx-1 color-white bg-red-dark" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+				<a href="#" class="icon icon-m shadow-xl rounded-sm mx-1 color-white bg-dark-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+			</p>
+		
+			<div class="divider divider-margins mb-2"></div>
+		
+			<div class="row mb-0 font-10 text-center px-2 mb-2">
+				<div class="col-4 p-0"><a href="#">Privacy Policy</a></div>
+				<div class="col-4 p-0"><a href="#">Terms of Service</a></div>
+				<div class="col-4 p-0"><a href="#" data-back-to-top>Back to Top</a></div>
+			</div>
+		
+			<div class="divider divider-margins mb-3"></div>
+			<p class="font-11 text-center mb-0 pb-3">Copyright &copy; Enabled <span class="copyright-year"></span>. All rights reserved.</p>
+		</div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

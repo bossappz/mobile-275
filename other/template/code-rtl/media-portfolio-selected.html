@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html" class="active-nav"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        <div class="card card-style">
+            <div class="card card-style rounded-0 mx-0 mb-0 bg-17" data-card-height="250">
+            
+                <div class="card-bottom text-center">
+                    <h1 class="color-white">Project 1</h1>
+                    <p class="mt-n2 pb-2 color-white">Awesome all the way</p>
+                </div>
+                <div class="card-overlay bg-gradient"></div>
+            </div>
+        </div>
+        <a href="#" data-menu="menu-share" class="btn btn-center-m bg-green-dark font-700 text-uppercase btn-m under-slider-btn mb-4 rounded-xl">Share Project</a>
+                
+        <div class="card card-style">
+            <div class="content">
+                <h1>Welcome</h1>
+                <p>
+                    Instant articles support any content. Designed to load in a hearbeat. They are always present on the page, and work like a charm. We filled them up with contet for a demo.
+                </p>
+                <a href="#" class="shareToFacebook icon icon-s bg-facebook rounded-sm shadow-xxl"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="shareToTwitter icon icon-s bg-twitter rounded-sm shadow-xxl"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="shareToWhatsApp icon icon-s bg-whatsapp rounded-sm shadow-xxl"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="shareToMail icon icon-s bg-mail rounded-sm shadow-xxl"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content">
+                <h1>This is an Image Galler</h1>
+                <p>Simple thumbnails with caption attached to them. These will all open a gallery when tapped.</p>
+            </div>
+            <div class="row text-center row-cols-3 mb-0 mx-2">
+                <a class="col" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter">
+                    <img src="images/empty.png" data-src="images/pictures/1s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Writer</p>
+                </a>
+                <a class="col" data-gallery="gallery-1" href="images/pictures/8t.jpg" title="Cream Cookie">
+                    <img src="images/empty.png" data-src="images/pictures/8s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Cream</p>
+                </a>
+                <a class="col" data-gallery="gallery-1" href="images/pictures/14t.jpg" title="Cookies and Flowers">
+                    <img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Cookie</p>
+                </a>
+                <a class="col" data-gallery="gallery-1" href="images/pictures/21t.jpg" title="Pots and Pans">
+                    <img src="images/empty.png"data-src="images/pictures/21s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Pots</p>
+                </a>
+                <a class="col" data-gallery="gallery-1" href="images/pictures/26t.jpg" title="Berries are Packed with Fiber">
+                    <img src="images/empty.png" data-src="images/pictures/26s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Berry</p>
+                </a>
+                <a class="col" data-gallery="gallery-1" href="images/pictures/23t.jpg" title="A beautiful Retro Camera">
+                    <img src="images/empty.png" data-src="images/pictures/23s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+                    <p class="font-600">Camera</p>
+                </a>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content">
+                <h3 class="font-700">Contrasts</h3>
+                <p>
+                    Let's say you have a very light text on a dark background. Here is where contrasts are perfect.
+                </p>
+                <p class="opacity-90 mb-0">I'm set to 90% opacity.</p>
+                <p class="opacity-80 mb-0">I'm set to 80% opacity.</p>
+                <p class="opacity-70 mb-0">I'm set to 70% opacity.</p>
+                <p class="opacity-60 mb-0">I'm set to 60% opacity.</p>
+                <p class="opacity-50 mb-0">I'm set to 50% opacity.</p>
+                <p class="opacity-40 mb-0">I'm set to 40% opacity.</p>
+                <p class="opacity-30 mb-0">I'm set to 30% opacity.</p>
+                <p class="opacity-20 mb-0">I'm set to 20% opacity.</p>
+                <p class="opacity-10 mb-1">I'm set to 10% opacity.</p>
+            </div>  
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+                <h3 class="font-700">Font Weights</h3>
+                <p>
+                    Select the thickness of your font with ease. Add a secondary class that will change weights.
+                </p>
+                <p class="font-900 mb-0">This text is set to 900 weight.</p>
+                <p class="font-800 mb-0">This text is set to 800 weight.</p>
+                <p class="font-700 mb-0">This text is set to 700 weight.</p>
+                <p class="font-600 mb-0">This text is set to 600 weight.</p>
+                <p class="font-500 mb-0">This text is set to 500 weight.</p>
+                <p class="font-400 mb-0">This text is set to 400 weight.</p>
+                <p class="font-300 mb-0">This text is set to 300 weight.</p>
+                <p class="font-200 mb-0">This text is set to 200 weight.</p>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3 class="font-700">Lists</h3>
+                <p>
+                    Select the thickness of your font with ease. Add a secondary class that will change weights.
+                </p>
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <ul class="icon-list">
+                            <li><i class="fa fa-check color-green-dark"></i>List</li>
+                            <li><i class="fa fa-star color-yellow-dark"></i>List</li>
+                            <li><i class="fa fa-heart color-red-dark"></i>List</li>
+                            <li><i class="fa fa-circle color-magenta-dark"></i>List</li>
+                            <li><i class="fa fa-square color-pink-light"></i>List</li>
+                        </ul> 
+                    </div>      
+                    <div class="col-4">
+                        <ul>
+                            <li>List</li>
+                            <li>List</li>
+                            <li>List</li>
+                            <li>List</li>
+                            <li>List</li>
+                        </ul>    
+                    </div>
+                    <div class="col-4">    
+                    <ol>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                        <li>List</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">        
+            <div class="content mb-0">
+                <h3 class="font-700">Highlights</h3>
+                <p class="pb-2">Showcase the most important part of a paragraph with highlights. Easy and awesome!</p>
+                <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-blue-dark">this part</mark> of the text.</p>
+                <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-red-dark">this part</mark> of the text.</p>
+                <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-yellow-dark">this part</mark> of the text.</p>
+                <p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-green-dark">this part</mark> of the text.</p>
+                <p class="mb-4">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-magenta-dark">this part</mark> of the text.</p>
+            </div>
+        </div>
+
+        
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

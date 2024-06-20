@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "656084134158",
+    "project_id": "mobile-275",
+    "storage_bucket": "mobile-275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656084134158:android:852527420a498303918f5f",
+        "android_client_info": {
+          "package_name": "io.bossappz.mobile275"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlmDBOrBmUH8-xQbN0kfMC7FeHIXTWsI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-gradient="gradient-1">
+
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">KOLOR</a>
+        <a href="#" data-menu="menu-main"  class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-4 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-3"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-menu="menu-bell"  class="header-icon header-icon-2"><i class="fas fa-bell"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html" class="active-nav"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+
+    <!-- Global Menus-->
+    <div id="menu-main"  data-menu-load="menu-main.html"  data-menu-active="nav-contact"   class="menu menu-box-left menu-gradient"   data-menu-width="260" data-menu-effect="menu-parallax"></div>
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>
+    <div id="menu-bell"  data-menu-load="menu-bell.html"  data-menu-effect="menu-over" class="menu menu-box-detached menu-box-top" data-menu-height="380"></div>
+
+    <div class="page-content header-clear-medium">
+
+        <div class="card card-style">
+            <div class="responsive-iframe">
+                <iframe src='https://www.google.com/maps/embed/v1/view?key=AIzaSyAM3nxDVrkjyKwdIZp8QOplmBKLRVI5S_Y&center=-33.8569,151.2152&zoom=16&maptype=satellite' frameborder='0' allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+                <h1>Get in Touch</h1>
+                <p>
+                    A fully working PHP/AJAX contact form made to be as easy as possible to use.
+                </p>
+
+                <div class="form-sent disabled">
+                    <div>
+                        <div class="shadow-l rounded-m gradient-green me-n1 ms-n1 mb-n1 ">
+                            <h1 class="color-white text-center pt-4"><i class="fa fa-check-circle fa-3x shadow-s scale-box rounded-circle"></i></h1>
+                            <h2 class="color-white bold text-center pt-3">Message Sent</h2>
+                            <p class="color-white pb-4 text-center mt-n2 mb-0">We'll get back to you shortly.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="content text-center">
+                            <h2>Meanwhile, let's get social!</h2>
+                            <p class="boxed-text-xl">
+                                Here are our social media platforms! Follow us for the latest updates or just say hello!
+                            </p>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-instagram ms-3 me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="validator-name" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Name is required!</div>
+                <div id="validator-mail1" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Email Address is required!</div>
+                <div id="validator-mail2" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Invalid email Address!</div>
+                <div id="validator-text" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Please enter your message!</div>
+
+                <div class="contact-form">
+                    <div>
+                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="form-field form-name">
+                                    <label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+                                    <input type="text" name="contactNameField" value="" class="round-small" id="contactNameField" />
+                                </div>
+                                <div class="form-field form-email">
+                                    <label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+                                    <input type="text" name="contactEmailField" value="" class="round-small" id="contactEmailField" />
+                                </div>
+                                <div class="form-field form-text">
+                                    <label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+                                    <textarea name="contactMessageTextarea" class="round-small" id="contactMessageTextarea"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <input type="submit" class="btn bg-green-dark text-uppercase font-900 btn-m btn-full border-0 rounded-sm  shadow-xl contactSubmitButton" value="Send Message" data-formId="contactForm" />
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form-sent disabled">
+                    <div>
+                        <div class="shadow-l rounded-m gradient-green me-n1 ms-n1 mb-n1 ">
+                            <h1 class="color-white text-center pt-4"><i class="fa fa-check-circle fa-3x shadow-s scale-box rounded-circle"></i></h1>
+                            <h2 class="color-white bold text-center pt-3">Message Sent</h2>
+                            <p class="color-white pb-4 text-center mt-n2 mb-0">We'll get back to you shortly.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="content text-center">
+                            <h2>Meanwhile, let's get social!</h2>
+                            <p class="boxed-text-xl">
+                                Here are our social media platforms! Follow us for the latest updates or just say hello!
+                            </p>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-instagram ms-3 me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3 class="font-700">Postal Information<a href="#" class="icon icon-xxs rounded-xl shadow-xxl bg-green-dark float-end"><i class="fa fa-map-marker"></i></a></h3>
+                <p class="mt-n2 mb-2 color-blue-dark font-10">Get in touch with us</p>
+                <p class="pb-0 mb-0">PO Box 22161 Street Collins East</p>
+                <p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+                <p class="pb-0">Victoria 8007 Australia</p>
+
+                <div class="divider"></div>
+
+                <h3 class="font-700">Envato Headquarters<a href="#" class="icon icon-xxs rounded-xl shadow-xxl bg-blue-dark float-end"><i class="fa fa-info"></i></a></h3>
+                <p class="mt-n2 mb-2 color-blue-dark font-10">Get in touch with us</p>
+
+                <p class="pb-0 mb-0">121 King Street, Melbourne</p>
+                <p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+                <p class="pb-0">Victoria 3000 Australia</p>
+
+                <div class="list-group list-custom-small">
+                    <a href="tel:+1 234 567 890">
+                        <i class="fa font-14 fa-phone color-phone"></i>
+                        <span>+1 234 567 8900</span>
+                        <span class="badge bg-highlight">TAP TO CALL</span>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="mailto:mail@domain.com">
+                        <i class="fa font-14 fa-envelope color-mail"></i>
+                        <span>mail@domain.com</span>
+                        <span class="badge bg-highlight">TAP TO MAIL</span>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="https://www.facebook.com/enabled.labs/">
+                        <i class="fab font-14 fa-facebook-square color-facebook"></i>
+                        <span>enabled.labs</span>
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="https://twitter.com/iEnabled">
+                        <i class="fab font-14 fa-twitter-square color-twitter"></i>
+                        <span>@iEnabled</span>
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="#" class="border-0">
+                        <i class="fab font-14 fa-linkedin color-linkedin"></i>
+                        <span>@Enabled</span>
+                        <i class="fa fa-link"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+
+    </div>
+    <!-- Page Content Ends Here-->
+    <div class="page-bg"><div></div></div>
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,30 @@
+/* BiZ9 Edit Fix */
+/* Use with dashboard edit mode */
+.theme-dark p{
+    color:black;
+}
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark #footer-bar a i, .theme-dark #footer-bar a span .theme-dark p strong{
+    color:black;
+}
+.theme-dark span:not(.badge){
+    color:black!important;
+}
+.sun-editor .se-dialog button, .sun-editor .se-dialog input, .sun-editor .se-dialog label{
+    background-color:orange;
+}
+.sun-editor .se-dialog button, .sun-editor .se-dialog input, .sun-editor .se-dialog label {
+    background-color: white !important;
+}
+.sun-editor .se-dialog button, .sun-editor .se-dialog input, .sun-editor .se-dialog label {
+    background-color: #F5F5F5 !important;
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-input-form.se-input-url {
+    color:black !important
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-input-form {
+    color:black !important
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-form .se-input-control {
+    color:black !important
+}
+

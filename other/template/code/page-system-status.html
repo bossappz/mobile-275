@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        <div class="card card-style">
+            <div class="content text-center">
+                <h1 class="glow-red"><i class="fa fa-server fa-3x"></i></h1>
+                <h1 class="font-30 mt-3">System Status</h1>
+                <p class="mt-n2 mb-2 font-10 color-blue-dark">Customer Notifiications for System Error</p>
+                <p class="boxed-text-xl pb-3">
+                    Notify your users about your server conditions and status. This is a great page for maitenance.
+                </p>
+            </div>
+        </div>
+        <a href="https://themeforest.net/item/kolor-mobile-mobile-template/22129337" class="btn btn-center-l bg-red-dark font-700 text-uppercase btn-m under-slider-btn mb-4 rounded-xl" target="_blank">Subscribe for Updates</a>
+        
+        <div class="card card-style">
+            <div class="content">
+                <div class="list-group list-boxes">
+                    <a href="#" class="bg-green-dark rounded-sm shadow-l pb-1">
+                        <span>System FTP</span>
+                        <strong class="font-800 color-white opacity-50">All FTP User Account</strong>
+                        <u class="color-white">ONLINE</u>
+                        <i class="fa fa-check-circle color-white"></i>
+                    </a>        
+                    <a href="#" class="bg-yellow-dark rounded-sm shadow-l pb-1">
+                        <span>Storage Server</span>
+                        <strong class="font-800 color-white opacity-50">SSD And HDD Cloud Hosting</strong>
+                        <u class="color-white">ISSUE</u>
+                        <i class="fa fa-exclamation-triangle color-white"></i>
+                    </a>        
+                    <a href="#" class="bg-red-dark rounded-sm shadow-l pb-1">
+                        <span>API Gateway</span>
+                        <strong class="font-800 color-white opacity-50">Connecting Protocols</strong>
+                        <u class="color-white">ERROR</u>
+                        <i class="fa fa-times-circle color-white"></i>
+                    </a>        
+                </div>
+
+                <h1 class="pt-3">Storage Server <span class="badge bg-red-dark float-end font-11 mt-2 text-uppercase px-2 py-1">Error</span></h1>
+                <p>
+                    Currently upgrading our database, this is a much needed task that will increase the performance of our pages. Please stand by. It'll be done shortly.
+                </p>
+
+                <h1>API Gateway <span class="badge bg-yellow-dark float-end font-11 mt-2 text-uppercase px-2 py-1">Issue</span></h1>
+                <p>
+                    We've identified an issue wiht our customer database and put it offlie until we can guarantee all systems are running correctly
+                </p>
+            </div>  
+        </div>
+        
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

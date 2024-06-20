@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        <div class="card card-style">
+            <div class="content text-center">
+                <img src="images/preload-logo.png" width="100" class="mx-auto">
+                <h1 class="font-30 mt-3">Enabled</h1>
+                <p class="mt-n2 mb-2 font-10 color-blue-dark">Company Executive Officer</p>
+                <p class="text-center pb-3">
+                    Enabled was founded over 15 years ago, with the sole goal to make great mobile websites. Back in the days of iPhone 2G and now the leader in latest mobile technologies and web apps.
+                </p>
+            </div>
+        </div>
+        <a href="tel:+1234567890" class="default-link btn btn-center-l bg-red-dark font-700 text-uppercase btn-m under-slider-btn mb-4 rounded-xl" target="_blank">Call Now</a>
+        
+        <div class="card card-style bg-transparent shadow-0">
+            <div class="row mb-0">
+                <div class="col-6">
+                    <div class="bg-theme rounded-m py-3 text-center">
+                        <img src="images/avatars/5s.png" class="gradient-green mx-auto rounded-xl" width="100">
+                        <h2 class="pt-3">Mr. Enabled</h2>
+                        <p class="mt-n2 color-blue-dark">Executive Officers</p>
+                        <a href="#" class="icon icon-xs rounded-sm shadow-xl bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon icon-xs mx-1 rounded-sm shadow-xl bg-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="icon icon-xs rounded-sm shadow-xl bg-twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="bg-theme rounded-m py-3 text-center">
+                        <img src="images/avatars/7s.png" class="gradient-green mx-auto rounded-xl" width="100">
+                        <h2 class="pt-3">Mrs. Enabled</h2>
+                        <p class="mt-n2 color-blue-dark">Marketing Specialist</p>
+                        <a href="#" class="icon icon-xs rounded-sm shadow-xl bg-pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="icon icon-xs mx-1 rounded-sm shadow-xl bg-pink-dark"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="icon icon-xs rounded-sm shadow-xl bg-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html" class="active-nav"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+
+        <div class="card card-style">
+            <p class="content">
+                Vibrate API is supported only by Android devices. You can add these to any type of buttons and links and they will work on both iOS and Android, but on Android they will also virbrate when tapped. 
+            </p>
+            <div class="divider divider-margins mb-2 mt-n2"></div>
+            <p class="bg-red-dark show-no-device content p-3 rounded-m mb-3 shadow-xl">
+                This device doesn't support Virbate API. You can still use the buttons
+                just as regular buttons, but they will not trigger a Vibration when tapped.
+            </p>
+
+            <p class="bg-red-dark show-ios content p-3 rounded-m mb-3 shadow-xl">
+                iOS doesn't support Virbate API. You can still use the buttons
+                just as regular buttons, but they will not trigger a Vibration when tapped.
+            </p>
+
+            <p class="bg-green-dark show-android  content p-3 rounded-m mb-3 shadow-xl">
+                Android fully supports Vibrate API. The buttons below will also vibrate when you tap them! Enjoy the vibration show!
+            </p>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3>Short Vibrations</h3>
+                <p>These are great for small and unobtrusive indications of a tap.</p>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <a href="#" data-vibrate="5" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">5ms - Short</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" data-vibrate="10" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">10ms - Short </a>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <a href="#" data-vibrate="50" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800 ">50ms - Medium</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" data-vibrate="100" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">100ms - Medium </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <a href="#" data-vibrate="250" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800 ">250ms - Long</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" data-vibrate="500" class="btn btn-m btn-full shadow-xl rounded-s bg-highlight text-uppercase font-800">500ms - Long </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    
+        <div class="card card-style">
+            <div class="content">
+                <h3>Custom Vibration Time</h3>
+                <p>You can set any vibration time you require, without the use of any custom code It's super simple!</p>
+                <div class="input-style no-borders no-icon validate-field mb-4">
+                    <input type="number" class="vibrate-demo form-control validate-text" id="f3" placeholder="Enter time in Miliseconds">
+                    <label for="f3" class="color-highlight">Enter time in Miliseconds</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>                
+                <div class="row mt-4 mb-0">
+                    <div class="col-6">
+                        <a href="#" class="start-vibrating btn btn-m btn-full shadow-s rounded-s text-uppercase font-800 bg-green-dark">Start</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="stop-vibrating btn btn-m btn-full shadow-s rounded-s text-uppercase font-800 bg-red-dark">Stop </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    <div class="page-bg"><div></div></div>
+       
+  
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

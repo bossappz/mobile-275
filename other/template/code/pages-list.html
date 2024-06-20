@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">KOLOR</a>
+        <a href="#" data-menu="menu-main"  class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-4"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-menu="menu-bell"  class="header-icon header-icon-3"><i class="fas fa-bell"></i></a>
+        <a href="#" data-menu="menu-mail"  class="header-icon header-icon-2"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+
+    <!-- Global Menus-->
+    <div id="menu-main"  data-menu-load="menu-main.html"  data-menu-active="nav-components"   class="menu menu-box-left menu-gradient"   data-menu-width="260" data-menu-effect="menu-parallax"></div>   
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+    <div id="menu-bell"  data-menu-load="menu-bell.html"  data-menu-effect="menu-over" class="menu menu-box-detached menu-box-top" data-menu-height="380"></div>   
+    <div id="menu-mail"  data-menu-load="menu-mail.html"  data-menu-effect="menu-over" class="menu menu-box-modal" data-menu-height="470" data-menu-width="330"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        
+        <div class="card card-style bg-10" data-card-height="250">
+            <div class="card-top">
+                <a href="#" class="btn btn-s text-uppercase font-11 btn-center-l mt-n1 text-shadow-l rounded-s gradient-green font-700">Powered by Bootstrap</a>
+            </div>
+            <div class="card-bottom boxed-text-xl">
+                <h1 class="color-white font-800 font-24">Site Pages</h1>
+                <p class="color-white mt-n2 pb-3 opacity-70">
+                    Classic Pages any Site Must Have!
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </div>
+        <a href="pages.html" class="btn btn-center-l btn-m rounded-xl bg-red-dark font-700 text-uppercase under-slider-btn mb-4 scale-box">View More Pages</a>
+
+        <div class="card card-style">
+            <div class="content mt-0 mb-0">
+                <div class="list-group list-custom-large check-visited">
+                    <a href="page-about.html">
+                        <i class="rounded-xl font-17 fa fa-power-off round-huge bg-gray-dark"></i>
+                        <span>About Us</span>
+                        <strong>An example of an about page</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-article-cards.html">
+                        <i class="rounded-xl font-18 far fa-sticky-note round-huge bg-green-dark"></i>
+                        <span>Article Cards</span>
+                        <strong>Instant loading Article Cards</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-article-list.html">
+                        <i class="rounded-xl font-16 fa fa-list round-huge bg-red-dark"></i>
+                        <span>Article List</span>
+                        <strong>Instant loadign Article List</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-careers.html">
+                        <i class="rounded-xl font-14 far fa-handshake round-huge bg-brown-dark"></i>
+                        <span>Careers</span>
+                        <strong>Searching for a new colleague?</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-calendar.html">
+                        <i class="rounded-xl font-14 far fa-calendar round-huge bg-teal-dark"></i>
+                        <span>Calendar</span>
+                        <strong>Calendar Template</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-calendar.html">
+                        <i class="rounded-xl font-14 fa fa-comment round-huge bg-green-dark"></i>
+                        <span>Chat Bubbles</span>
+                        <strong>Chat Template</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-contact.html">
+                        <i class="rounded-xl font-14 far fa-envelope round-huge bg-blue-light"></i>
+                        <span>Contact Page</span>
+                        <strong>Get in Touch with Us</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-soon-1.html">
+                        <i class="rounded-xl font-14 far fa-clock round-huge bg-teal-dark"></i>
+                        <span>Countdown 1</span>
+                        <strong>Coming Soon - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-soon-2.html">
+                        <i class="rounded-xl font-14 far fa-clock round-huge bg-blue-dark"></i>
+                        <span>Countdown 2</span>
+                        <strong>Coming Soon - App Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-404-1.html">
+                        <i class="rounded-xl font-18 fa fa-exclamation-circle round-huge bg-orange-light"></i>
+                        <span>Error 404</span>
+                        <strong>Error Page - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-404-2.html">
+                        <i class="rounded-xl font-18 fa fa-exclamation-circle round-huge bg-yellow-light"></i>
+                        <span>Error 404</span>
+                        <strong>Error Page - App Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-landing.html">
+                        <i class="rounded-xl font-17 fa fa-th-large round-huge bg-green-dark"></i>
+                        <span>Landing</span>
+                        <strong>With Single Image Background</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-faq.html">
+                        <i class="rounded-xl font-16 fa fa-question round-huge bg-brown-dark"></i>
+                        <span>F.A.Q's</span>
+                        <strong>Here are some Frequent Questions</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-map-full.html">
+                        <i class="rounded-xl font-14 fa fa-map-marker round-huge bg-blue-dark"></i>
+                        <span>Map Page Full Screen</span>
+                        <strong>Interactive Google Maps Embed.</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-maintenance.html">
+                        <i class="rounded-xl font-14 fa fa-cog round-huge bg-red-dark"></i>
+                        <span>Maintenance</span>
+                        <strong>Take your page offline and leave a message.</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-team.html">
+                        <i class="rounded-xl font-16 fa fa-user round-huge bg-teal-dark"></i>
+                        <span>Team Page</span>
+                        <strong>Meet our team, it's instant too</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-timeline-left.html">
+                        <i class="rounded-xl font-16 fa fa-bars round-huge bg-green-dark"></i>
+                        <span>Timeline 1</span>
+                        <strong>A timeline list of your events</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-timeline-center.html">
+                        <i class="rounded-xl font-16 fa fa-bars round-huge bg-yellow-dark"></i>
+                        <span>Timeline 2</span>
+                        <strong>A timeline columns of your events</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-profile-classic.html">
+                        <i class="rounded-xl font-16 fa fa-user round-huge bg-blue-dark"></i>
+                        <span>Profile Classic Style</span>
+                        <strong>A simple and beautiful profile page.</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-profile-instagram.html">
+                        <i class="rounded-xl font-16 fa fa-user round-huge bg-pink-dark"></i>
+                        <span>Profile Instagram Style</span>
+                        <strong>A simple and beautiful profile page.</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-forgot-1.html">
+                        <i class="rounded-xl font-16 fa fa-question round-huge bg-teal-dark"></i>
+                        <span>Recover Page 1</span>
+                        <strong>Forgot Screen - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-forgot-2.html">
+                        <i class="rounded-xl font-16 fa fa-question round-huge bg-gray-dark"></i>
+                        <span>Recover Page 1</span>
+                        <strong>Forgot Screen - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-login-1.html">
+                        <i class="rounded-xl font-16 fa fa-unlock round-huge bg-green-dark"></i>
+                        <span>Sign In / Login 1</span>
+                        <strong>Login Screen - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-login-2.html">
+                        <i class="rounded-xl font-16 fa fa-unlock round-huge bg-magenta-dark"></i>
+                        <span>Sign In / Login 2</span>
+                        <strong>Login Screen - App Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-register-1.html">
+                        <i class="rounded-xl font-14 fa fa-lock round-huge bg-blue-dark"></i>
+                        <span>Sign Up / Register 1</span>
+                        <strong>Register Screen - Page Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-register-2.html">
+                        <i class="rounded-xl font-14 fa fa-lock round-huge bg-brown-dark"></i>
+                        <span>Sign Up / Register 2</span>
+                        <strong>Register Screen - App Style</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-system-status.html">
+                        <i class="rounded-xl font-16 fa fa-server round-huge bg-gray-dark"></i>
+                        <span>System Status</span>
+                        <strong>Add the status of your page and server.</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-task-progress.html">
+                        <i class="rounded-xl font-16 fa fa-check-circle round-huge bg-green-dark"></i>
+                        <span>Task Progression</span>
+                        <strong>Show off the progress of your tasks</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-tos.html">
+                        <i class="rounded-xl font-16 fa fa-bookmark round-huge bg-red-dark"></i>
+                        <span>Terms of Service</span>
+                        <strong>A sample of terms and conditions</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-vcard.html" class="no-border">
+                        <i class="rounded-xl font-16 fa fa-id-card round-huge bg-gray-dark"></i>
+                        <span>V-Card / Contact Info</span>
+                        <strong>View and download contact information</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="page-wallet.html" class="border-0">
+                        <i class="rounded-xl font-16 fa fa-wallet round-huge bg-brown-dark"></i>
+                        <span>Wallet / Payments</span>
+                        <strong>Wallet with Graphical Overview</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>              
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h4>Store Templates</h4>
+                <p>
+                    If you plan to convert Kolor to a CMS these pages will be essential for you.
+                </p>
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-large check-visited">
+                    <a href="store-cover.html"><i class="far fa-image rounded-xl bg-teal-dark"></i><span>Cover</span><strong>Full Screen Product Slider</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-home.html"><i class="fa fa-star rounded-xl bg-yellow-dark"></i><span>Home 1</span><strong>Store Homepage</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-product-list.html"><i class="fa fa-list rounded-xl bg-red-dark"></i><span>Product List</span><strong>Listing of Products</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-product-grid.html"><i class="fa fa-th-large rounded-xl bg-blue-dark"></i><span>Product Grid</span><strong>Grid View of Products</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-product-1.html"><i class="fa fa-bookmark rounded-xl bg-green-dark"></i><span>Product 1</span><strong>Product View1</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-product-2.html"><i class="fa fa-bookmark rounded-xl bg-brown-dark"></i><span>Product 2</span><strong>Product View2</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-cart-1.html"><i class="fa fa-shopping-bag rounded-xl bg-gray-dark"></i><span>Cart 1</span><strong>Shopping Cart 1</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-cart-2.html"><i class="fa fa-shopping-cart rounded-xl bg-magenta-dark"></i><span>Cart 2</span><strong>Shopping Cart 2</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-checkout-1.html"><i class="fa fa-credit-card rounded-xl bg-teal-dark"></i><span>Checkout 1</span><strong>Checkout Page Style 1</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-checkout-2.html"><i class="fa fa-credit-card rounded-xl bg-mint-dark"></i><span>Checkout 2</span><strong>Checkout Page Style 2</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="store-invoice.html" class="border-0"><i class="fa fa-history rounded-xl bg-brown-dark"></i><span>Invoice & History</span><strong>Invoices Lists</strong><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h4>News Templates</h4>
+                <p>
+                    If you plan to convert Kolor to a CMS these pages will be essential for you.
+                </p>
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-large check-visited">
+                    <a href="news-cover.html"><i class="far fa-image rounded-xl bg-teal-dark"></i><span>Cover</span><strong>Cover Screen</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-home.html"><i class="fa fa-star rounded-xl bg-yellow-dark"></i><span>Home</span><strong>Homepage Layout</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-article.html"><i class="fa fa-heart rounded-xl bg-red-dark"></i><span>Article</span><strong>Basic Article</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-list-1.html"><i class="fa fa-list rounded-xl bg-green-dark"></i><span>List 1</span><strong>List Styled</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-list-2.html"><i class="fa fa-list rounded-xl bg-magenta-dark"></i><span>List 2</span><strong>Grid Styled</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-list-3.html"><i class="fa fa-list rounded-xl bg-magenta-dark"></i><span>List 2</span><strong>Cards Styled</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="news-categories.html" class="border-0"><i class="fa fa-th-large rounded-xl bg-pink-dark"></i><span>Categroies</span><strong>Categories List</strong><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h4>Blog Templates</h4>
+                <p>
+                    If you plan to convert Kolor to a CMS these pages will be essential for you.
+                </p>
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-large check-visited">
+                    <a href="blog-home.html"><i class="fa fa-pencil-alt rounded-xl  bg-gray-dark"></i><span>Home</span><strong>Classic Homepage</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="blog-article.html"><i class="fa fa-eye rounded-xl bg-teal-dark"></i><span>Article</span><strong>Article Content</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="blog-list-1.html"><i class="fa fa-list rounded-xl bg-green-dark"></i><span>List</span><strong>Article Listings</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="blog-list-2.html"><i class="fa fa-th-large rounded-xl bg-mint-dark"></i><span>Grid</span><strong>Grdi Style Listings</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="blog-categories.html"><i class="fa fa-bookmark rounded-xl bg-red-dark"></i><span>Categories</span><strong>Category Boxes</strong><i class="fa fa-angle-right"></i></a>
+                    <a href="blog-archive.html"><i class="fa fa-archive rounded-xl bg-brown-dark"></i><span>Boomarks</span><strong>Saved Bookmarks</strong><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+                
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

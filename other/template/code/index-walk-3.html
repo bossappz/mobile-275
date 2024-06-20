@@ -1,0 +1,95 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app header-transparent">
+        <a href="#" data-back-button class="color-theme header-title">KOLOR</a>
+        <a href="#" data-back-button class="color-theme header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="color-theme header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="color-theme header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="color-theme header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content mb-0 pb-0">
+        
+        <div class="cover-controls-over">
+            <a href="#" class="color-theme slider-prev opacity-50"><i class="fa fa-arrow-left pe-3"></i>Prev</a>
+            <a href="#" class="color-theme slider-next opacity-50">Next <i class="fa fa-arrow-right ps-3"></i></a>
+        </div>
+        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div data-card-height="cover" class="card">
+                            <div class="card-center text-center">
+                                <i class="fa fa-power-off fa-8x color-green-dark mb-4"></i>
+                                <h2 class="color-theme font-32 text-center mb-3 font-900">
+                                    Enabled
+                                </h2>
+                                <p class="color-theme boxed-text-xl opacity-50 mb-4 font-14">
+                                    Over 30.000 Happy Customers and Growing. We're the biggest Mobile Exclusive Author on the Market
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="cover" class="card">
+                            <div class="card-center text-center">
+                                <i class="fa fa-star fa-8x color-yellow-dark mb-4"></i>
+                                <h2 class="color-theme font-32 text-center mb-3 font-900">
+                                    Elite Quality
+                                </h2>
+                                <p class="color-theme boxed-text-xl opacity-60 mb-4">
+                                    We believe success comes from making customers happy, and we're always providing the best.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="cover" class="card">
+                            <div class="card-center text-center">
+                                <i class="fa fa-gift fa-8x color-red-dark mb-4"></i>
+                                <h2 class="color-theme font-32 text-center mb-3 font-900">
+                                    Let's Start
+                                </h2>
+                                <p class="color-theme boxed-text-xl opacity-60 mb-4">
+                                    Check all the pages. Kolor is packed with amazing features no other product has.
+                                </p>
+                                <a href="#" data-back-button class="btn btn-center-l btn-m bg-red-dark text-uppercase font-700 rounded-xl">Get Started</a>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Page content ends here-->
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">KOLOR</a>
+        <a href="#" data-menu="menu-main"  class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-4"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-menu="menu-bell"  class="header-icon header-icon-3"><i class="fas fa-bell"></i></a>
+        <a href="#" data-menu="menu-mail"  class="header-icon header-icon-2"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html" class="active-nav"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+    
+
+    <!-- Global Menus-->
+    <div id="menu-main"  data-menu-load="menu-main.html"  data-menu-active="nav-media"   class="menu menu-box-left menu-gradient"   data-menu-width="260" data-menu-effect="menu-parallax"></div>   
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+    <div id="menu-bell"  data-menu-load="menu-bell.html"  data-menu-effect="menu-over" class="menu menu-box-detached menu-box-top" data-menu-height="380"></div>   
+    <div id="menu-mail"  data-menu-load="menu-mail.html"  data-menu-effect="menu-over" class="menu menu-box-modal" data-menu-height="470" data-menu-width="330"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        
+        <div class="card card-style bg-17" data-card-height="250">
+            <div class="card-top">
+                <a href="#" class="btn btn-s text-uppercase font-11 btn-center-l mt-n1 text-shadow-l rounded-s gradient-green font-700">Powered by Bootstrap</a>
+            </div>
+            <div class="card-bottom boxed-text-xl">
+                <h1 class="color-white font-800 font-26">Media</h1>
+                <p class="color-white mt-n2 pb-3 opacity-70">
+                    Classic Pages any Site Must Have!
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </div>
+        <a href="pages.html" class="btn btn-center-l btn-m rounded-xl bg-red-dark font-700 text-uppercase under-slider-btn mb-4">Back to Main Page List</a>
+        
+        <div class="card card-style">
+            <div class="content  mb-0">
+                <h3>Galleries</h3>
+                <p class="mb-2">
+                    Powered by a highly optimized version of Lightbox for maximum compatibility and perfect performance.
+                </p>
+                <div class="list-group list-custom-large check-visited">
+                    <a href="media-gallery-round.html">
+                        <i class="rounded-xl font-11 fa fa-circle round-huge bg-red-dark"></i>
+                        <span>Rounded Thumbnails</span>
+                        <strong>Thumbnails with or Without Captions</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="media-gallery-square.html">
+                        <i class="rounded-xl font-11 fa fa-square round-huge bg-green-dark"></i>
+                        <span>Squared Thumbnails</span>
+                        <strong>Thumbnails with or Without Captions</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="media-gallery-views.html">
+                        <i class="rounded-xl font-11 fa fa-th-large round-huge bg-blue-dark"></i>
+                        <span>Switch Views</span>
+                        <strong>Change your Gallery View</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="media-gallery-filter.html" class="border-0">
+                        <i class="rounded-xl font-11 fa fa-filter round-huge bg-teal-dark"></i>
+                        <span>Filterable Gallery</span>
+                        <strong>Filter your Gallery Category</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                
+        <div class="card card-style">
+            <div class="content  mb-0">
+                <h3>Portfolios</h3>
+                <p class="mb-2">
+                    Showcase your projects with style and multiple designs.
+                </p>
+                <div class="list-group list-custom-large check-visited">
+                    <a href="media-portfolio-instant.html">
+                        <i class="rounded-xl font-16 fa fa-bolt round-huge bg-yellow-dark"></i>
+                        <span>Instant Protfolio</span>
+                        <strong>Instantly Open</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-one-1.html">
+                        <i class="rounded-xl font-16 fa fa-list round-huge bg-red-dark"></i>
+                        <span>One Column - V1</span>
+                        <strong>One Column, Style 1</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-one-2.html">
+                        <i class="rounded-xl font-16 fa fa-list round-huge bg-green-dark"></i>
+                        <span>One Column - V2</span>
+                        <strong>One Column, Style 2</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-one-3.html">
+                        <i class="rounded-xl font-16 fa fa-list round-huge bg-blue-dark"></i>
+                        <span>One Column - V3</span>
+                        <strong>One Column, Style 3</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-two-1.html">
+                        <i class="rounded-xl font-16 fa fa-th-large round-huge bg-orange-dark"></i>
+                        <span>Two Columns - V1</span>
+                        <strong>Two Columns, Style 1</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-two-2.html">
+                        <i class="rounded-xl font-16 fa fa-th-large round-huge bg-magenta-dark"></i>
+                        <span>Two Columns - V2</span>
+                        <strong>Two Columns, Style 2</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                    <a href="media-portfolio-selected.html">
+                        <i class="rounded-xl font-16 fa fa-check round-huge bg-green-dark"></i>
+                        <span>Selected Project</span>
+                        <strong>Showcase Selected  Item</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>              
+                </div>
+            </div>
+        </div>
+                
+      
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

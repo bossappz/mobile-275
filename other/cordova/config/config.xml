@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="CONFIG_ID" version="CONFIG_VERSION" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>APP_TITLE</name>
+    <description>-</description>
+    <author email="support@bossappz.com" href="https://cordova.apache.org">
+        My BoSS AppZ Mobile
+    </author>
+    <content src="index.html" />
+    <allow-navigation href="https://*youtube.com/*"/>
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="hostname" value="localhost" />
+    <preference name="InterceptRemoteRequests" value="all" />
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need to photo library access to get pictures from there</string>
+    </edit-config>
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="26" />
+        <preference name="android-targetSdkVersion" value="33" />
+        <icon src="other/cordova/android/icons/ldpi.png" density="ldpi" />
+        <icon src="other/cordova/android/icons/mdpi.png" density="mdpi" />
+        <icon src="other/cordova/android/icons/hdpi.png" density="hdpi" />
+        <icon src="other/cordova/android/icons/xhdpi.png" density="xhdpi" />
+        <icon src="other/cordova/android/icons/xxhdpi.png" density="xxhdpi" />
+        <icon src="other/cordova/android/icons/xxxhdpi.png" density="xxxhdpi" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+        <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#000000" />
+        <preference name="SplashScreenBackgroundColor" value="#000000" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+        <preference name="FadeSplashScreen" value="false"/>
+        <preference name="SplashScreenWidth" value="400" />
+        <preference name="SplashScreenHeight" value="400" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+    <platform name="ios">
+        <preference name="scheme" value="app" />
+        <icon src="other/cordova/ios/icons/icon-60@3x.png" width="180" height="180" />
+        <icon src="other/cordova/ios/icons/icon-60.png" width="60" height="60" />
+        <icon src="other/cordova/ios/icons/icon-60@2x.png" width="120" height="120" />
+        <icon src="other/cordova/ios/icons/icon-76.png" width="76" height="76" />
+        <icon src="other/cordova/ios/icons/icon-76@2x.png" width="152" height="152" />
+        <icon src="other/cordova/ios/icons/icon-40.png" width="40" height="40" />
+        <icon src="other/cordova/ios/icons/icon-40@2x.png" width="80" height="80" />
+        <icon src="other/cordova/ios/icons/icon.png" width="57" height="57" />
+        <icon src="other/cordova/ios/icons/icon@2x.png" width="114" height="114" />
+        <icon src="other/cordova/ios/icons/icon-72.png" width="72" height="72" />
+        <icon src="other/cordova/ios/icons/icon-72@2x.png" width="144" height="144" />
+        <icon src="other/cordova/ios/icons/icon-167.png" width="167" height="167" />
+        <icon src="other/cordova/ios/icons/icon-small.png" width="29" height="29" />
+        <icon src="other/cordova/ios/icons/icon-small@2x.png" width="58" height="58" />
+        <icon src="other/cordova/ios/icons/icon-small@3x.png" width="87" height="87" />
+        <icon src="other/cordova/ios/icons/icon-50.png" width="50" height="50" />
+        <icon src="other/cordova/ios/icons/icon-50@2x.png" width="100" height="100" />
+        <icon src="other/cordova/ios/icons/icon-1024.png" width="1024" height="1024" />
+        <resource-file src="GoogleService-Info.plist" />
+    </platform>
+</widget>

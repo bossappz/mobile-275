@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <title id='biz_head_title'></title>
+        <!--CSS-START --!>
+            <!--CSS-TEMPLATE-START --!>
+                <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+                <link rel="stylesheet" type="text/css" href="styles/style.css">
+                <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+                <link rel="stylesheet" type="text/css" href="scripts/biz9-mobile/libz/suneditor/suneditor.min.css">
+                <link rel="stylesheet" type="text/css" href="scripts/biz9-mobile/libz/mp3/mp3_style.css">
+                <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+                <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+                <!--CSS-TEMPLATE-END --!>
+                    <!--CSS-END--!>
+                        </head>
+                        <body class="theme-light" data-gradient="gradient-4">
+                        <div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+                        <!-- BIZ PAGE START -->
+                        <div id="page">
+                            <!-- BIZ HEAD TOP START -->
+                            <input id='biz_page_title' type='hidden'value='service_home'/>
+                            <input id='biz_page_footer' type='hidden'value='service'/>
+                            <input id='biz_page_tbl_id' type='hidden'/>
+                            <input id='biz_page_data_type' type='hidden'/>
+                            <input id='biz_page_photofilename' type='hidden'/>
+                            <input id='biz_page_parent_data_type' type='hidden'/>
+                            <input id='biz_page_parent_tbl_id' type='hidden'/>
+                            <input id='biz_page_top_data_type' type='hidden'/>
+                            <input id='biz_page_top_tbl_id' type='hidden'/>
+                            <input id='biz_page_review_count' type='hidden'/>
+                            <input id='biz_page_rating_avg' type='hidden'/>
+                            <input id='biz_page_category' type='hidden'/>
+                            <input id='biz_page_mp3_url' type='hidden'/>
+  <div class="header header-fixed header-logo-app">
+                                                  <a href="#" class="header-title biz_lbl_back_link" id='biz_lbl_page_title'></a>
+                                <a href="#" class="header-icon header-icon-1 biz_lbl_back_link"  id='biz_lbl_page_icon'><i class="fas fa-arrow-left"></i></a>
+                                <a href="#" id='biz_btn_order_cart_top' data-menu="menu-cart" class="header-icon header-icon-4  biz_lbl_back_link"><i class="fas fa-shopping-bag color-brown-dark"></i></a>
+              </div>
+                            <!-- BIZ HEAD TOP END -->
+                            <!-- BIZ FOOTER MENU START -->
+                            <div id="footer-bar" class="footer-bar-4">
+                            </div>
+                            <!-- BIZ FOOTER MENU END -->
+                            <!-- BIZ LEFT MENU START -->
+                            <div id="menu-main"  data-menu-active="nav-welcome" class="menu menu-box-left menu-gradient" data-menu-width="260" data-menu-effect="menu-parallax">
+                                <div class="menu-wrap" id='biz_lbl_left_menu'>
+                                </div>
+                            </div>
+                            <!-- BIZ LEFT MENU END -->
+                            <!-- BIZ CONTENT START -->
+                            <div class="page-content header-clear-medium">
+                                <div class="content mb-0 ">
+                                    <div class="splide single-slider slider-no-arrows slider-no-dots" id="biz_div_slide_show">
+                                        <div class="splide__track">
+                                            <div class="splide__list" id='biz_slide_show_list'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--POPULAR_CATEGORY CARD START --!>
+                                    <div class="card card-style biz_lbl_card" id='biz_lbl_popular_category_full_card'>
+                                    <div id='biz_lbl_mid_card'>
+                                    <h1 class="text-center mb-n1 mt-2" id='biz_lbl_mid_title'></h1>
+                                    <div class="content m-3" id='biz_lbl_mid_list'></div>
+                                    </div>
+                                    <div class="content" id='biz_lbl_bottom_card'>
+                                    <h1  id='biz_lbl_bottom_title' class="text-center mb-3"></h1>
+                                    <div class="row mb-0" id='biz_lbl_bottom_list'></div>
+                                    </div>
+                                    </div>
+                                    <!--POPULAR_CATEGORY CARD END --!>
+                                        </div>
+                                        <!-- BIZ CONTENT END -->
+                                        <div class="page-bg"><div></div></div>
+                                        <!-- TOP MENU CART CHECKOUT START--!>
+                                            <div id="menu-cart" class="menu menu-box-top menu-box-detached" data-menu-height="380">
+                                            <div class="content mt-3" >
+                                            <h5 id='biz_lbl_cart_empty_title'></h5>
+                                            <div id='biz_lbl_cart_top_list'></div>
+                                            <div class="divider mb-3 mt-n2"></div>
+                                            <div class="row mb-3" id='biz_lbl_cart_total'>
+                                            <div class="col-6"><h6 class="font-600 font-16">Total</h6></div>
+                                            <div class="col-6"><h6 class="font-600 font-16 text-end" id='biz_lbl_cart_grand_total'></h6></div>
+                                            </div>
+                                            <a href="order_checkout_summary.html" class="btn btn-m rounded-sm btn-full bg-green-dark font-800 text-uppercase mb-3" id='biz_btn_cart_checkout'>Proceed to Checkout</a>
+                                            </div>
+                                            <!-- TOP MENU CART CHECKOUT END--!>
+                                                </div>
+                                                <!-- BIZ PAGE END -->
+                                                <!--SCRIPT-START --!>
+                                                                                            <!--BIZ9-MOBILE-CORE-START --!>
+                                                                                                <script type="text/javascript" src="cordova.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/jquery-3.6.3.min.js.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/pulltorefresh.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/lockr.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/bootstrap.min.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/jurlp.min.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/custom.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/suneditor/suneditor.min.js"></script>
+                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/libz/mp3/mp3_script.js"></script>
+                                                                                                <!--BIZ9-MOBILE-CORE-END --!>
+                                                                                                    <!-- BIZ9-MOBILE-BIZ-CORE-START --!>
+                                                                                                        <script type="text/javascript" src="scripts/biz9-mobile/core/utility.js"></script>
+                                                                                                        <script type="text/javascript" src="scripts/biz9-mobile/core/base.js"></script>
+                                                                                                        <script type="text/javascript" src="scripts/biz9-mobile/core/photo_upload.js"></script>
+                                                                                                        <!-- BIZ9-MOBILE-BIZ-CORE-END --!>
+                                                                                                            <!-- BIZ9-MOBILE-BIZ-SCRIPTZ-START --!>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/config.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/about.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/contact.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/user.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/category.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/dashboard.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/blog_post.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/product.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/event.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/review.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/contact.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/gallery.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/home.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/page.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/order.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/service.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/member.js"></script>
+                                                                                                                <script type="text/javascript" src="scripts/biz9-mobile/scriptz/biz.js"></script>
+                                                                                                                <!-- BIZ9-MOBILE-BIZ-SCRIPTZ-END --!>
+                                                                                                                    <!--SCRIPT-END --!>
+                                                                                                                                                                                            </body>

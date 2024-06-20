@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="#" data-back-button class="header-title">KOLOR</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-2"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html" class="active-nav"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+
+    <!-- Global Menus-->
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+
+    <div class="page-content header-clear-medium">
+                        
+        <div class="card card-style">
+            <div class="content">
+                <h3>Toggle Mobile Styled</h3>
+                <p>
+                    These toggles are designed to look like mobile toggles. They can have any color or icon you wish.
+                </p>
+
+
+                
+                <div class="d-flex no-effect" 
+                     data-trigger-switch="toggle-id-1" 
+                     data-bs-toggle="collapse" 
+                     href="#collapseExample1" 
+                     role="button" 
+                     aria-expanded="false" 
+                     aria-controls="collapseExample1">
+                    <div class="pt-1">
+                        <h5 class="font-600">iOS Toggle Style 1</h5>
+                    </div>
+                    <div class="ms-auto me-4 pe-2">
+                        <div class="custom-control ios-switch">
+                            <input type="checkbox" class="ios-input" id="toggle-id-1">
+                            <label class="custom-control-label" for="toggle-id-1"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample1">
+                    <p class="mb-0 pb-0 pt-2">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+
+                <div class="divider mt-3 mb-3"></div>
+                
+                <div class="d-flex no-effect" 
+                     data-trigger-switch="toggle-id-2" 
+                     data-bs-toggle="collapse" 
+                     href="#collapseExample2" 
+                     role="button" 
+                     aria-expanded="false" 
+                     aria-controls="collapseExample2">                    
+                    <div class="pt-1">
+                        <h5 class="font-600">iOS Toggle Style 2</h5>
+                    </div>
+                    <div class="ms-auto me-4 pe-2">
+                        <div class="custom-control ios-switch ios-switch-icon">
+                            <input type="checkbox" class="ios-input" id="toggle-id-2">
+                            <label class="custom-control-label" for="toggle-id-2"></label>
+                            <i class="fa fa-check font-11 color-white"></i>
+                            <i class="fa fa-times font-11 color-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample2">
+                    <p class="mb-0 pb-0 pt-2">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+                
+                <div class="divider mt-3 mb-3"></div>
+
+                <div class="d-flex no-effect" 
+                     data-trigger-switch="toggle-id-3" 
+                     data-bs-toggle="collapse" 
+                     href="#collapseExample3" 
+                     role="button" 
+                     aria-expanded="false" 
+                     aria-controls="collapseExample3">                    
+                    <div class="pt-1">
+                        <h5 class="font-600">iOS Toggle Style 3</h5>
+                    </div>
+                    <div class="ms-auto me-4 pe-2">
+                        <div class="custom-control ios-switch ios-switch-icon">
+                            <input type="checkbox" class="ios-input" id="toggle-id-3">
+                            <label class="custom-control-label" for="toggle-id-3"></label>
+                            <span>ON</span>
+                            <span>OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample3">
+                    <p class="mb-0 pb-0 pt-2">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+
+                <div class="divider mt-3 mb-3"></div>
+
+                <div class="d-flex no-effect" 
+                     data-trigger-switch="toggle-id-4" 
+                     data-bs-toggle="collapse" 
+                     href="#collapseExample4" 
+                     role="button" 
+                     aria-expanded="false" 
+                     aria-controls="collapseExample4">                    
+                    <div class="pt-1">
+                        <h5 class="font-600">Android Style Toggle</h5>
+                    </div>
+                    <div class="ms-auto me-4 pe-2">
+                        <div class="custom-control android-switch">
+                            <input type="checkbox" class="android-input" id="toggle-id-4">
+                            <label class="custom-control-label" for="toggle-id-4"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample4">
+                    <p class="mb-0 pb-0 pt-2">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="card card-style">
+            <div class="content mb-0 pb-0">
+                <h3>Toggle Classic Styled</h3>
+                <p>
+                    These toggles are designed to look like mobile toggles. They can have any color or icon you wish.
+                </p>
+            </div>
+
+            <div class="content mb-2">
+                
+                <div class="list-group list-custom-small list-icon-0">
+                    <a data-bs-toggle="collapse" class="classic-toggle border-0" href="#collapse-1">
+                        <span class="font-14">Classic Toggle Without Icon</span>
+                        <i class="fa fa-arrow-down"></i>
+                    </a>        
+                </div>
+                <div class="collapse" id="collapse-1">
+                    <p class="mb-0 pb-0">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+
+                <div class="list-group list-custom-small list-icon-0">
+                    <a data-bs-toggle="collapse" class="classic-toggle no-effect border-0" href="#collapse-2">
+                        <i class="fa font-14 fa-share-alt color-theme"></i>
+                        <span class="font-14">Classic Toggle With Icon</span>
+                        <i class="fa fa-angle-down"></i>
+                    </a>        
+                </div>
+                <div class="collapse" id="collapse-2">
+                    <p class="mb-0 pb-0">This is just a text. You can add any content you want inside toggles. It will work like a charm.</p>
+                </div>
+
+            </div>
+        </div>    
+
+
+        <div class="card card-style">
+            <div class="content mb-0 pb-0">
+                <h3>What can toggles do?</h3>
+                <p>
+                    You can toggle content, use them as checkboxes, or even attach JS functions to them. For example, the toggle below will change the page skin. You can even combine them with toasts or other objects.
+                </p>
+            </div>
+
+            <div class="content mb-4">
+                <div class="d-flex">
+                    <div class="pt-1">
+                        <h5 data-toggle-theme data-activate="toggle-id-7" class="font-600">Activate Dark Mode</h5>
+                    </div>
+                    <div class="ms-auto me-4 pe-2">
+                        <div class="custom-control ios-switch">
+                            <input data-toggle-theme type="checkbox" class="ios-input" id="toggle-id-7">
+                            <label class="custom-control-label" for="toggle-id-7"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    <div class="page-bg"><div></div></div>
+
+         
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

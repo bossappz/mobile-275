@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-gradient="gradient-1">
+
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+
+<div id="page">
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+
+    <div class="page-content pb-0">
+        <div class="card card-style m-0 rounded-0 bg-16" data-card-height="cover">
+            <div class="card-top notch-clear p-4">
+                <a href="#" data-back-button class="color-white font-17 pe-3"><i class="fas fa-arrow-left"></i></a>
+                <a href="#" data-back-button class="color-white font-17 font-800">KOLOR</a>
+            </div>
+            <div class="card-center bg-theme rounded-m mx-4">
+                <div class="content">
+                    <h1>Register</h1>
+                    <p class="font-11 mt-n2 mb-3">Create Account. It's free!</p>
+                    <div class="input-style no-borders has-icon validate-field">
+                        <i class="fa fa-user"></i>
+                        <input type="name" class="form-control validate-name" id="form1a" placeholder="Name">
+                        <label for="form1a" class="color-blue-dark font-10 mt-1">Name</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                    <div class="input-style no-borders has-icon validate-field mt-2">
+                        <i class="fa fa-at"></i>
+                        <input type="email" class="form-control validate-name" id="form1aa" placeholder="Email">
+                        <label for="form1aa" class="color-blue-dark font-10 mt-1">Email</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                    <div class="input-style no-borders has-icon validate-field mt-2">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control validate-text" id="form3a" placeholder="Choose a Password">
+                        <label for="form3a" class="color-blue-dark font-10 mt-1">Choose a Password</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                    <div class="input-style no-borders has-icon validate-field mt-2">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control validate-text" id="form3a1" placeholder="Confirm your Password">
+                        <label for="form3a1" class="color-blue-dark font-10 mt-1">Confirm your Password</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                    <div class="row mb-0">
+                        <a href="#" class="col-6 text-start font-10 pt-2 pb-2 color-theme opacity-50">Forgot Password?</a>
+                        <a href="#" class="col-6 text-end font-10 pt-2 pb-2 color-theme opacity-50">Sign In Here</a>
+                    </div>
+
+                    <a href="#" class="btn btn-full btn-m bg-green-dark rounded-s mt-3 mb-n2 font-800 text-uppercase shadow-xl">Register</a>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-85 rounded-0"></div>
+        </div>
+
+    </div>
+    <!-- Page content ends here-->
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

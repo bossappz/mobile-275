@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>KolorMobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-gradient="gradient-1">
+    
+<div id="preloader"><div class="spinner-border color-red-dark" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">KOLOR</a>
+        <a href="#" data-menu="menu-main"  class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-dark"><i class="fas fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" data-toggle-theme      class="header-icon header-icon-5 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-color" class="header-icon header-icon-4"><i class="fas fa-cog fa-spin"></i></a>
+        <a href="#" data-menu="menu-bell"  class="header-icon header-icon-3"><i class="fas fa-bell"></i></a>
+        <a href="#" data-menu="menu-mail"  class="header-icon header-icon-2"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-4">
+        <a href="pages-list.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="components-list-detailed.html" class="active-nav"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="pages-media.html"><i class="fa fa-image"></i><span>Media</span></a>
+        <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+
+    <!-- Global Menus-->
+    <div id="menu-main"  data-menu-load="menu-main.html"  data-menu-active="nav-components"   class="menu menu-box-left menu-gradient"   data-menu-width="260" data-menu-effect="menu-parallax"></div>   
+    <div id="menu-color" data-menu-load="menu-color.html" class="menu menu-box-modal menu-gradient"  data-menu-width="cover" data-menu-height="cover"></div>   
+    <div id="menu-share" data-menu-load="menu-share.html" data-menu-effect="menu-parallax" class="menu menu-box-bottom menu-box-detached" data-menu-height="390"></div>   
+    <div id="menu-bell"  data-menu-load="menu-bell.html"  data-menu-effect="menu-over" class="menu menu-box-detached menu-box-top" data-menu-height="380"></div>   
+    <div id="menu-mail"  data-menu-load="menu-mail.html"  data-menu-effect="menu-over" class="menu menu-box-modal" data-menu-height="470" data-menu-width="330"></div>   
+
+    <div class="page-content header-clear-medium">
+                
+        
+        <div class="card card-style bg-10" data-card-height="250">
+            <div class="card-top">
+                <a href="#" class="btn btn-s text-uppercase font-11 btn-center-l mt-n1 text-shadow-l rounded-s gradient-green font-700">Powered by Bootstrap 5</a>
+            </div>
+            <div class="card-bottom boxed-text-xl">
+                <h1 class="color-white font-800 font-24">Components</h1>
+                <p class="color-white mt-n2 pb-3 opacity-70">
+                    Ready built, copy and paste features for your page!
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </div>
+        <a href="https://themeforest.net/item/kolor-mobile-mobile-template/22129337" target="_blank" class="btn btn-center-m btn-m rounded-xl bg-green-dark font-700 text-uppercase under-slider-btn mb-4">Purchase Today</a>
+        
+        <div class="card card-style">
+            <div class="content">
+                <h3>What are Components?</h3>
+                <p>
+                    These are components that the user can interact with. These change their design or the page style when interacting, or invite users to take an action.
+                </p>
+                <div class="row mb-n1">
+                    <div class="col-6">
+                        <a href="components-list-detailed.html" class="btn btn-full btn-sm rounded-xl shadow-xxl bg-blue-dark font-700 text-uppercase">Detailed List</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="components-list-simple.html" class="btn btn-full btn-sm rounded-xl bg-white color-black  font-700 shadow-xxl text-uppercase">Simplified List</a>
+                    </div>
+                </div>
+            </div>
+        </div>            
+        <div class="card card-style">
+            <div class="content mt-0">
+                <div class="list-group list-custom-large check-visited">
+                    <a href="component-advertisements.html"><i class="rounded-xl fa fa-money-bill-alt bg-green-dark"></i>
+                        <span>Ads Boxes</span>
+                        <strong>Built to Ad Standards</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-add-to-home.html"><i class="rounded-xl fa fa-mobile bg-gray-dark"></i>
+                        <span>Add To Home</span>
+                        <strong>Progressive Web App</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-accordions.html"><i class="rounded-xl fa fa-server bg-blue-dark"></i>
+                        <span>Accordions</span>
+                        <strong>Tap to Expand</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-action-sheets.html"><i class="rounded-xl fa fa-bookmark bg-red-dark"></i>
+                        <span>Action Sheets</span>
+                        <strong>Interact with Users</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-buttons.html"><i class="rounded-xl fa fa-hand-pointer bg-green-dark"></i>
+                        <span>Buttons</span>
+                        <strong>All possible styles</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-back-to-top.html"><i class="rounded-xl fa fa-arrow-up bg-red-light"></i>
+                        <span>Back to Top</span>
+                        <strong>Going up? Just tap</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-charts.html"><i class="rounded-xl fa fa-chart-pie bg-gray-dark"></i>
+                        <span>Charts</span>
+                        <strong>Powered by Charts.js</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-chips.html"><i class="rounded-xl fa fa-sun bg-yellow-dark"></i>
+                        <span>Chips</span>
+                        <strong>Elegant and Simple</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-card-images.html"><i class="rounded-xl fa fa-star bg-magenta-dark"></i>
+                        <span>Caption Boxes</span>
+                        <strong>Any Style. Any Placement</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-columns.html"><i class="rounded-xl fa fa-th-large bg-magenta-dark"></i>
+                        <span>Columns</span>
+                        <strong>Powered by Bootstrap</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-colors.html"><i class="rounded-xl fa fa-heart bg-red-dark"></i>
+                        <span>Color Packs</span>
+                        <strong>Elegant Colors</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-collapse.html"><i class="rounded-xl fa fa-angle-down bg-yellow-dark"></i>
+                        <span>Dropdowns</span>
+                        <strong>Tap to Expand</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-dividers.html"><i class="rounded-xl fa fa-minus bg-teal-dark"></i>
+                        <span>Dividers</span>
+                        <strong>Decoration for content</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-embedly.html"><i class="rounded-xl fa fa-arrow-down bg-orange-dark"></i>
+                        <span>Embedly</span>
+                        <strong>Embed Anything</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-footers.html"><i class="rounded-xl fa fa-minus bg-dark-dark"></i>
+                        <span>Footers</span>
+                        <strong>Footer Bars and Menus</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-embeds.html"><i class="rounded-xl fa fa-play bg-red-dark"></i>
+                        <span>Embeds</span>
+                        <strong>Classic Embeds</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-graphs.html"><i class="rounded-xl fa fa-chart-line bg-blue-dark"></i>
+                        <span>Graphs</span>
+                        <strong>Powered by Charts.js</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-google-fonts.html"><i class="rounded-xl fab fa-google color-white bg-google"></i>
+                        <span>Google Fonts</span>
+                        <strong>Any font. Anywhere</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-headers.html"><i class="rounded-xl fa fa-minus bg-green-dark"></i>
+                        <span>Header Styles</span>
+                        <strong>Any Mobile Styled Header</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-inputs.html"><i class="rounded-xl fa fa-code bg-brown-dark"></i>
+                        <span>Inputs</span>
+                        <strong>All Styles and Highly flexible</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-icons.html"><i class="rounded-xl fa fa-bullseye bg-red-dark"></i>
+                        <span>Icons</span>
+                        <strong>For Social and Other Purposes</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-icon-font.html"><i class="rounded-xl fab fa-font-awesome-flag bg-green-dark"></i>
+                        <span>Icon Font</span>
+                        <strong>Powered by Google Fonts</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-lightbox.html"><i class="rounded-xl fa fa-image bg-mint-dark"></i>
+                        <span>Lightbox</span>
+                        <strong>The best Mobile Galleries</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-list-groups.html"><i class="rounded-xl fa fa-list bg-gray-dark"></i>
+                        <span>Link Lists</span>
+                        <strong>Any style of List.</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-notifications-alerts.html"><i class="rounded-xl fa fa-exclamation-triangle bg-red-dark"></i>
+                        <span>Alerts</span>
+                        <strong>Classic Designed</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-notifications-mobile.html"><i class="rounded-xl fa fa-exclamation-triangle bg-red-dark"></i>
+                        <span>Notifications </span>
+                        <strong>Mobile Designed</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-os-detection.html"><i class="rounded-xl fa fa-tablet bg-dark-dark"></i>
+                        <span>OS Detection</span>
+                        <strong>Detect your Device</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-offline-detection.html"><i class="rounded-xl fa fa-wifi bg-green-dark"></i>
+                        <span>Offline Detection</span>
+                        <strong>Detect your Connection</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-quotes.html"><i class="rounded-xl fa fa-quote-right bg-gray-dark"></i>
+                        <span>Quotes</span>
+                        <strong>Share the wisdom</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-pagination.html"><i class="rounded-xl fa fa-ellipsis-h bg-red-dark"></i>
+                        <span>Pagination</span>
+                        <strong>Powered by Bootstrap Nav</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-preloaders.html"><i class="rounded-xl fa fa-spinner bg-teal-dark"></i>
+                        <span>Preloaders</span>
+                        <strong>Multiple Styles Available</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-pricing.html"><i class="rounded-xl fa fa-dollar-sign bg-green-dark"></i>
+                        <span>Pricing Tables</span>
+                        <strong>In Carousel or Simple</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-reviews.html"><i class="rounded-xl fa fa-star bg-yellow-dark"></i>
+                        <span>Reviews</span>
+                        <strong>Share your user Feedback</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-reading-time.html"><i class="rounded-xl fa fa-minus bg-red-dark"></i>
+                        <span>Reading Progress</span>
+                        <strong>Estimate of Reading Time</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-carousels.html"><i class="rounded-xl fa fa-image bg-magenta-dark"></i>
+                        <span>Sliders / Carousels</span>
+                        <strong>Powered by OWL Carousel</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-snackbars.html"><i class="rounded-xl fa fa-gem bg-blue-dark"></i>
+                        <span>Snackbars</span>
+                        <strong>Designed like Native Mobile</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-socials.html"><i class="rounded-xl color-white fab fa-facebook bg-facebook"></i>
+                        <span>Socials</span>
+                        <strong>Social Buttons</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-sharing.html"><i class="rounded-xl color-white fab fa-twitter bg-twitter"></i>
+                        <span>Social Sharing</span>
+                        <strong>Share your page with a tap.</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-search.html"><i class="rounded-xl fa fa-search bg-blue-dark"></i>
+                        <span>Search</span>
+                        <strong>Search for any content.</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-tabs.html"><i class="rounded-xl fa fa-tasks bg-teal-dark"></i>
+                        <span>Tabs</span>
+                        <strong>Pills, Captioned or Classic</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-tables.html"><i class="rounded-xl fa fa-table bg-yellow-dark"></i>
+                        <span>Tables</span>
+                        <strong>Necessary for Data</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-toasts.html"><i class="rounded-xl fa fa-exclamation-triangle bg-red-dark"></i>
+                        <span>Toasts</span>
+                        <strong>Styled like Mobile Native Toasts</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-toggles.html"><i class="rounded-xl fa fa-toggle-on bg-green-dark"></i>
+                        <span>Toggles</span>
+                        <strong>Designed to look like Switches</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-user-list.html"><i class="rounded-xl fa fa-user bg-red-dark"></i>
+                        <span>User Lists & Groups</span>
+                        <strong>Great for Staff or Teams</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a href="component-typography.html" class="border-0 mb-n4"><i class="rounded-xl fa fa-bold bg-blue-dark"></i>
+                        <span>Typography</span>
+                        <strong>All possible typography</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content">
+                <h3>Freshly Added Features</h3>
+                <p>
+                    With each update we release, we'll keep adding new and more powerful features. Here are the latest ones we've added. Be sure to check the change log in the Item Support Tab on ThemeForest.
+                </p>
+                <div class="list-group list-custom-small check-visited">
+                    <div class="divider mb-0"></div>
+                    <a href="component-add-to-home.html"><i class="rounded-xl fa fa-mobile bg-gray-dark"></i><span>Add To Home - Banners</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-disqus-comments.html"><i class="rounded-xl fa fa-comment bg-green-dark"></i><span>Disqus Comments</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-embedly.html"><i class="rounded-xl fa fa-arrow-down bg-orange-dark"></i><span>Embedly | Embed Anything</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-geo-location.html"><i class="rounded-xl fa fa-map-marker bg-blue-dark"></i><span>Geolocation Web API</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-file-upload.html"><i class="rounded-xl fa fa-upload bg-blue-dark"></i><span>File Web API / Upload</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-facebook-comments.html"><i class="rounded-xl fab fa-facebook-f bg-blue-dark font-18"></i><span>Facebook Comments</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-offline-detection.html"><i class="rounded-xl fa fa-wifi bg-green-dark"></i><span>Connection Detection</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-qr-generator.html"><i class="rounded-xl fa fa-qrcode bg-brown-dark"></i><span>QR Generator</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-vibrate.html"><i class="rounded-xl fa fa-bullseye bg-teal-dark"></i><span>Vibrate Web API</span><i class="fa fa-angle-left"></i></a>
+                    <a href="component-user-list.html" class="border-0 mb-n4"><i class="rounded-xl fa fa-user bg-red-dark"></i><span>User Lists & Groups</span><i class="fa fa-angle-left"></i></a>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Loading Global Footer-->
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page Content Ends Here-->     
+    <div class="page-bg"><div></div></div>
+        
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
